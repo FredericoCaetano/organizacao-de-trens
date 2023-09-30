@@ -13,6 +13,12 @@ while i != 5:
         print("\n\n")
 
         funcao.adicionar_vagao(nVagao, nTrem)
+        funcao.exibir_composicao()
+
+    if i == 2:
+        nVagao = int(input("Entre com o numero do vagao que deseja remover: "))
+        funcao.remover_vagao(nVagao)
+        funcao.exibir_composicao()
 
     if i == 4:
         quantidade_vagoes = funcao.contar_vagoes()
